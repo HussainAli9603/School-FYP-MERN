@@ -1,0 +1,627 @@
+/* /////////////// */
+
+.main {
+  background: linear-gradient(80deg, #9198e5, #097ff2) !important;
+  width: 100%;
+  padding-bottom: 17.5%;
+  height: 100%;
+}
+.inputfields {
+  border-radius: 20px;
+  border: none;
+  padding: 5px 15px;
+  color: #097ff2;
+  font-weight: 500;
+  height: 30px;
+  margin-top: 10px;
+  flex: 8;
+}
+.inputfields:focus {
+  outline: none;
+}
+/* //////////////////////         CourseDetail Css */
+.courseDetail {
+  background: linear-gradient(80deg, #9198e5, #097ff2) !important;
+  width: 100%;
+}
+.courseInnerSection {
+  padding-top: 7%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.sideBar {
+  flex: 2;
+  background-color: transparent;
+  padding: 10px 20px;
+  min-height: 100vh;
+  position: fixed;
+  left: 8%;
+}
+.mainContent {
+  flex: 9;
+  background-color: white;
+  padding: 10px 20px;
+  margin-left: 20%;
+}
+
+.sideList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.sideItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin: 10px 0;
+}
+.sideLink {
+  text-decoration: none;
+  color: white;
+}
+.sideItem:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.courseDetailTopHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #393939;
+  color: white;
+}
+.GraddingTopHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  background-color: #393939;
+  color: white;
+  padding: 0 20px;
+  margin: 10px;
+}
+.GraddingBody {
+  margin: 10px;
+  display: flex;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.assignmentSection {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid gray;
+  margin-top: 20px;
+}
+.gradeTopic {
+  flex: 8;
+}
+.gradingInput {
+  flex: 1;
+  border: 1px solid gray;
+}
+.gradingInput:focus {
+  outline: none;
+}
+.courseName {
+  padding: 10px 40px;
+}
+.callIcon {
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 40px !important;
+}
+.callIcon:hover {
+  color: #097ff2;
+}
+.courseHr {
+  height: 3px;
+  background-color: gray;
+  border: none;
+}
+.courseContent {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+.courseText {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.courseIcon {
+  font-size: 40px !important;
+}
+@media (max-width: 786px) {
+  .courseInnerSection {
+    padding-top: 20%;
+  }
+}
+/* ///////////////////////////  Assignment section */
+.uploadAssignment {
+  margin-left: 55%;
+}
+.chooseAssignmentInput {
+  display: none;
+}
+
+.uploadIcon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.uploadIcon span {
+  background-color: #66798b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+/* /////////////////////////////// Quiz */
+.questionOptionsList {
+  list-style: none;
+  margin-top: 10px;
+}
+.optionItem {
+  margin-top: 5px;
+}
+.submitQuiz {
+  background-color: #097ff2;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ////////////////////////// Attendence */
+.attendenceDetails {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  width: 180px;
+  height: 260px;
+  position: absolute;
+  top: 23%;
+  right: 16%;
+  border: none;
+  border-radius: 20px;
+  /* text-align: center; */
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  z-index: 999 !important;
+}
+.attendenceDetailList {
+  list-style: none;
+  padding: 0 !important;
+}
+.attendenceDetailItem {
+  margin: 10px 0;
+}
+.attendenceActivity {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e4e4;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+.activitySection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.schedule {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.activitySpan {
+  font-size: 16px !important;
+}
+/* //////////////////  Grade section */
+.gradeSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+.gradeHr {
+  height: 2px;
+  background-color: #097ff2;
+
+  width: 95%;
+  margin: 0 auto;
+  border: none;
+}
+
+/* ////////////////////////////////// Teacher Components css */
+.addMaterialBtn {
+  background-color: #097ff2 !important;
+  color: white !important;
+  margin-right: 20px !important;
+}
+.addMaterialSectionHero,
+.createCourse {
+  width: 100% !important;
+  padding: 2% 0%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.addMaterialSectionHeroShow,
+.showCreateCourse {
+  display: block;
+  width: 80% !important;
+  padding: 2% 0%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  position: absolute;
+  top: 17%;
+  right: 2%;
+}
+.addMaterialSection,
+.createCourseSection {
+  margin-top: 7%;
+  width: 100%;
+}
+.joinCourseCard,
+.createCourseCard {
+  width: 60%;
+  margin: 0 auto;
+}
+.topBar,
+.courseTopBar {
+  background-color: #393939;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 5px 10px;
+}
+.courseClose,
+.courseTopIcon {
+  cursor: pointer;
+}
+.courseBody,
+.createCourseBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.accessP,
+.CourseName {
+  font-weight: 500;
+  flex: 4;
+}
+.courseInput,
+.createCourseInput {
+  flex: 8;
+  margin: 15px 4%;
+  height: 25px;
+}
+.courseInput:focus,
+.createCourseInput:focus {
+  outline: none;
+}
+.courseDescription {
+  resize: none;
+  min-height: 200px;
+  flex: 8;
+  margin: 5px 4%;
+}
+.courseDescription:focus {
+  outline: none;
+}
+.buttons,
+.createCoursebtn {
+  display: flex;
+  background-color: #74b4f2;
+  justify-content: space-around;
+  padding: 3px 20px;
+}
+.joinBtn,
+.cancelBtn {
+  border: 1px solid gray !important;
+  background-color: #097ff2 !important;
+  color: white !important;
+}
+.CourseBody {
+  display: flex;
+  align-items: center;
+}
+.bodySectionLeft {
+  flex: 9;
+}
+.bodySectionRight {
+  flex: 3;
+}
+.uploadImg {
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.arrowUpIcon {
+  font-size: 100px !important;
+  padding: 20px 10px;
+  border: 1px solid gray;
+}
+.CreateQuestion {
+  text-align: center;
+  margin-left: 30%;
+  list-style: lower-alpha;
+}
+.optionItem input:focus {
+  outline: none;
+}
+.submittedAssignmentSection,
+.QuizResultHide,
+.creatingGradMinHide {
+  width: 60%;
+  margin: 10px auto;
+  min-height: 85.5vh;
+  color: gray;
+  position: absolute;
+  top: 13%;
+  right: 14%;
+  display: none;
+}
+.submittedAssignmentSectionShow,
+.QuizResultShow,
+.creatingGradMin {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  min-height: 85.5vh;
+  color: gray;
+  position: absolute;
+  top: 13.2%;
+  z-index: 999;
+  right: 14%;
+  background-color: white;
+}
+.topheader,
+.QuizReslutTopHeader,
+.attendenceSheetHeader {
+  padding: 20px 0px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393939;
+  color: white;
+  font-weight: 400;
+}
+.topIcon,
+.quizResultIcon {
+  cursor: pointer;
+  margin-left: 13%;
+}
+
+.topheader hr {
+  margin-top: 10px;
+  background-color: gray;
+  height: 2px;
+  border: none;
+}
+.submittedBodySection,
+.QuizResultBody {
+  display: flex;
+}
+.submittedLeft,
+.resultLeft {
+  flex: 8;
+  padding: 10px 20px;
+  border-right: 1px solid gray;
+}
+.submittedRight,
+.resultRight {
+  min-height: 43vh;
+  padding: 10px 20px;
+  flex: 4;
+}
+.submittedRightTop,
+.resultRightTop {
+  padding: 10px 20px;
+}
+.submittedAssignmentList,
+.quizResultList {
+  list-style: none;
+  padding: 20px 0;
+}
+.submittedAssignmentItem,
+.quizResultItem {
+  margin-top: 10px;
+}
+/* ///////////////////////  End Quiz and Assignment */
+.attendeceBtn {
+  background-color: #097ff2 !important;
+  color: white !important;
+  font-weight: 500;
+}
+.attendeceTopicInput {
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid #097ff2;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 300;
+  width: 70%;
+  text-transform: capitalize;
+}
+.attendeceTopicInput::placeholder {
+  color: white;
+}
+.attendece {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 600;
+  color: black;
+}
+.attendenceList {
+  list-style: none;
+  font-weight: 500;
+  /* padding: 0; */
+  /* padding: 10px 0 0 5px; */
+  /* text-align: right;
+  margin-left: -200px; */
+  
+}
+.name{
+  margin-right: -1120px;
+}
+.attendenceItem {
+  margin-top: 20px;
+}
+.attendenceItem input {
+  width: 50px;
+  height: 20px;
+}
+.studentName {
+  flex: 4;
+}
+.present {
+  flex: 2;
+}
+.absent {
+  flex: 2;
+}
+.leave {
+  flex: 2;
+}
+.GraddingBody {
+  display: flex;
+  flex-direction: column;
+}
+.GraddingBody {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+/* ///////////////// video calling */
+.videoSection {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  min-height: 85.5vh;
+  color: gray;
+  position: absolute;
+  top: 22.2%;
+  z-index: 999;
+  right: 14%;
+  background-color: gray;
+  display: none;
+}
+.videoSectionshow {
+  display: block;
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  min-height: 85.5vh;
+  height: 100%;
+  color: gray;
+  position: absolute;
+  top: 22.2%;
+  z-index: 999;
+  right: 14%;
+  background-color: white;
+}
+.videoAccessCode {
+  width: 50%;
+  background-color: #fff;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  display: none;
+}
+.videoAccessCodeshow {
+  width: 50%;
+  background-color: #fff;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.accessInput {
+  flex: 8;
+  margin-left: 10px;
+}
+.callingSection {
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 !important;
+}
+.callCard {
+  height: 200px;
+  width: 24%;
+  margin: 0 1px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 !important;
+  background-color: #097ff2;
+}
+.callCard img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#customers td, #customers th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #04AA6D; */
+  color: black;
+}

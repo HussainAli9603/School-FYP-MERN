@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  font-family: "Corinthia", cursive;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Poiret One", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+webkit-scrollbar {
+  width: 5px !important;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(221, 216, 216) !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(223, 52, 223) !important;
+}
+::-webkit-scrollbar-button {
+  background-color: gray;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(175, 170, 175);
+}
